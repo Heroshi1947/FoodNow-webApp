@@ -14,7 +14,7 @@ export default function Login() {
   // this will connect frontend with backend to actually create an user by sending data stored in body to database
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/api/loginuser", {
+    const response = await fetch("/api/loginuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

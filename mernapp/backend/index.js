@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 // very imp middleware to connect frontend to backend
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "https://food-now-web-app.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 
 app.use(express.json()); // important
 //frontend to backend
-app.use(express.static(path.join(__dirname, "/build")));
+// app.use(express.static(path.join(__dirname, "/build")));
 
 // routes- telling our backend that following routes are made
 app.use("/api", require("./routes/createUser")); // to connect createUser route

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const URI = "mongodb://localhost:27017/FoodNow";
+const URI = "mongodb+srv://ecommerceAdmin:9717634523@cluster0.guzrj2b.mongodb.net/FoodNow";
 
 const connectionToDB = async () => {
   try {

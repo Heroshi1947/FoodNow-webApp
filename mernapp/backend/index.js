@@ -22,6 +22,8 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json()); // important
+//frontend to backend
+app.use(express.static(path.join(__dirname, "/build")));
 
 // routes- telling our backend that following routes are made
 app.use("/api", require("./routes/createUser")); // to connect createUser route

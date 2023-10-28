@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 // very imp middleware to connect frontend to backend
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://food-now-web-app.vercel.app");
+  res.setHeader("Access-Control-Allow-Origin", "*");
 res.setHeader("Access-Control-Allow-Methods", "POST");
 res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   res.header(

@@ -25,11 +25,11 @@ res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
 app.use(express.json()); // important
 //frontend to backend
-app.use(express.static(path.join(__dirname, "/build")));
+// app.use(express.static(path.join(__dirname, "/build")));
 
-app.use("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "/build/index.html"));
-});
+// app.use("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "/build/index.html"));
+// });
 
 // routes- telling our backend that following routes are made
 app.use("/api", require("./routes/createUser")); // to connect createUser route

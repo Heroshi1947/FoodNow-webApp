@@ -11,7 +11,7 @@ export default function Home() {
   const [search, setSearch] = useState("");
 
   const loadData = async () => {
-    let response = await fetch("/api/foodData", {
+    let response = await fetch(" https://food-now-web-app.vercel.app/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
